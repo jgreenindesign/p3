@@ -4,20 +4,33 @@ namespace p3\Http\Controllers;
 
 use p3\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Badcow\loremipsum;
 
 class loremController extends Controller {
-
     /**
-    * Responds to requests to GET /books
+    * 
     */
-    public function getLorem() {
-        return view('pages.lorem-ipsum');
+
+    public function postLoremText(Request $request){
+
+		$this->validate($request, [
+
+			'liParagraphs' => 'required|max:9|numeric'
+
+    	]);
+
+    	$input = $request->input('liParagraphs');
+
+    	/* Lorem Ipsum Generator */
+    	$generator = new \Badcow\LoremIpsum\Generator();
+    	/*return $generator;*/
+
+		$paragraphs = $generator->getParagraphs($input);
+		/*return View::make('pages.lorem-ipsum', array('paragraphs' => $paragraphs));*/
+		return view('pages.lorem-ipsum')->with('paragraphs', $paragraphs);
     }
 
-	/*public functions postGenerate(Request $request) {
-		
-	}*/
-
+    public function getLoremPage() {
+        return view('pages.lorem-ipsum');
+    }
 }
-
-?>

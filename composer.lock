@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3ed48c6567ab9c863a96f15719b58cc5",
-    "content-hash": "897e0e30c3f17e174ad4fdec0e3bb5bb",
+    "hash": "27a202376fea293b456a1093bd2c0323",
+    "content-hash": "642560cfa0f38cfe5ea7705a78758de5",
     "packages": [
         {
             "name": "badcow/lorem-ipsum",
@@ -203,6 +203,42 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "ecrmnn/lorem",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ecrmnn/lorem.git",
+                "reference": "b6e0112f204784253871615a342bdc382828e840"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ecrmnn/lorem/zipball/b6e0112f204784253871615a342bdc382828e840",
+                "reference": "b6e0112f204784253871615a342bdc382828e840",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "helper",
+            "autoload": {
+                "psr-4": {
+                    "Ecrmnn\\Lorem\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Eckermann",
+                    "email": "danieleckermann@gmail.com"
+                }
+            ],
+            "description": "Dummy text and images for Laravel",
+            "time": "2016-03-03 20:45:55"
         },
         {
             "name": "jakub-onderka/php-console-color",

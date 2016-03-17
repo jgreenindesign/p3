@@ -4,8 +4,11 @@ Route::group(['middleware' => ['web']], function () {
         return view('index');
     });
     
-    Route::get('/lorem-ipsum', 'LoremController@getLorem');
+    # Main page routes
+    Route::get('/lorem-ipsum', 'LoremController@getLoremPage');
     Route::get('/user', 'UserController@getUser');
+
+    Route::post('/lorem-ipsum', 'LoremController@postLoremText');
 
     # Restrict certain routes to only be viewable in the local environments
     if(App::environment('local')) {

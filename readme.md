@@ -14,4 +14,5 @@
 * 
 
 ## Additional Resources
-* twbs/bootstrap
+* Twitter Bootstrap Framework
+* 
