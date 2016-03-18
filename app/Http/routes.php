@@ -8,7 +8,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/lorem-ipsum', 'LoremController@getLoremPage');
     Route::get('/user', 'UserController@getUser');
 
+    # Content generation page routes
     Route::post('/lorem-ipsum', 'LoremController@postLoremText');
+    Route::post('/user', 'UserController@postUsers');
 
     # Restrict certain routes to only be viewable in the local environments
     if(App::environment('local')) {

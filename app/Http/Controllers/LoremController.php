@@ -15,11 +15,11 @@ class loremController extends Controller {
 
 		$this->validate($request, [
 
-			'liParagraphs' => 'required|max:9|numeric'
+			'paragraphs' => 'required|max:1|numeric'
 
     	]);
 
-    	$input = $request->input('liParagraphs');
+    	$input = $request->input('paragraphs');
 
     	/* Lorem Ipsum Generator */
     	$generator = new \Badcow\LoremIpsum\Generator();

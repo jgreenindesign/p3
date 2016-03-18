@@ -14,6 +14,18 @@ class userController extends Controller {
         return view('pages.user');
     }
 
+
+    public function postUsers(Request $request) {
+
+    	$this.validate($request, [
+
+    		'numberUsers' => 'required|max:2|numeric'
+
+		]);
+
+        return view('pages.user');
+    }    
+
 	/*public functions postGenerate(Request $request) {
 		
 	}*/

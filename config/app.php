@@ -156,6 +156,9 @@ return [
         p3\Providers\EventServiceProvider::class,
         p3\Providers\RouteServiceProvider::class,
 
+        Ecrmnn\Lorem\LoremServiceProvider::class,
+
+
     ],
 
     /*

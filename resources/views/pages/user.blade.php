@@ -9,31 +9,24 @@
 @section('content')
 
 	<h1>Random User Generator</h1>
-	<p>How many users do you want?</p>
-	<p>Include...</p>
+	
+	<form action="">
 
-	<form class="form-horizontal" action="">
-		<div class="form-group">
-			<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+		<div class="form-group row">
+			<label for="numberUsers" class="col-sm-2 control-label">Number of Users?</label>
 			
-			<div class="col-sm-10">
-		  		<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			<div class="col-sm-1">
+		  		<input type="email" class="form-control" id="numberUsers" value="1" maxlength="2">
 			</div>
 		</div>
 		
-		<div class="form-group">
-			<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-			
-			<div class="col-sm-10">
-		  		<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-			</div>
-		</div>
-
-		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
+		<div class="form-group row">
+			<div class="col-sm-3">
+				<p><b>Include...</b></p>
 			  	<div class="checkbox">
 				    <label>
 			      		<input type="checkbox" disabled="disabled" checked> User Name
+			      		<br><input type="checkbox"> Full Name
 			      		<br><input type="checkbox"> Profile
 			      		<br><input type="checkbox"> Email
 			      		<br><input type="checkbox"> Password
@@ -42,8 +35,8 @@
 			</div>
 		</div>
 
-		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
+		<div class="form-group row">
+			<div class="col-sm-3">
 	  			<button type="submit" class="btn btn-default">Generate!</button>
 			</div>
 		</div>

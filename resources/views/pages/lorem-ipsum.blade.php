@@ -14,10 +14,23 @@
 		{{ csrf_field() }}	
 
 		<div class="form-group">
-			<label for="liParagraphs" class="col-sm-3 control-label">Number of Paragraphs to Generate?</label>
+			
+			@if ($errors->has('paragraphs'))
+				<div class='col-sm-4'>
+					<p class='bg-danger'>{{ $errors->first('paragraphs') }}</p>
+				</div>
+				<div class="clearfix"></div>
+			@endif
+
+			<label for="paragraphs" class="col-sm-3 control-label">Number of Paragraphs to Generate?</label>
 			
 			<div class="col-sm-1">
-		  		<input type="text" class="form-control" id="liParagraphs" name="liParagraphs" placeholder="1" maxlength="1">
+		  		<input type="text" 
+		  		class="form-control {{ $errors->has('paragraphs') ? 'has-error' :'' }}" 
+		  		id="paragraphs" 
+		  		name="paragraphs" 
+		  		value="1" 
+		  		maxlength="1">
 			</div>
 		</div>
 

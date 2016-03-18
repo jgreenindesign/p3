@@ -1,4 +1,13 @@
-.panel.panel-default
-{
+.panel.panel-success {
 	margin-top: 25px;
+}
+
+.bg-danger {
+	padding: 15px;
+}
+
+.has-error {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
 }
