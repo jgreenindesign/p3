@@ -37,6 +37,7 @@
 		<button type="submit" class="btn btn-default" >Generate!</button>
 	</form>
 
+	{{-- Begin output if input was valid --}}
 	@if (isset($paragraphs))
 		<div class="panel panel-success">
 			<div class="panel-heading">
@@ -44,9 +45,11 @@
 			</div>
 			
 			<div class="panel-body">
-				@foreach ($paragraphs as $paragraph)
+				{{-- @foreach ($paragraphs as $paragraph)
 					<p>{{ $paragraph }}</p>
-				@endforeach
+				@endforeach --}}
+
+				<?php echo $paragraphs; ?>
 			</div>
 		</div>
 	@endif

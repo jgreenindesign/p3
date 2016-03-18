@@ -61,6 +61,8 @@
             @yield('content')
         </section>
 
+        <div class="clearfix"></div>
+
         <footer>
             &copy; Greenindesign {{ date('Y') }}
         </footer>
