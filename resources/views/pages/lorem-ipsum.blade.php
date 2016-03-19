@@ -22,7 +22,7 @@
 				<div class="clearfix"></div>
 			@endif
 
-			<label for="paragraphs" class="col-sm-3 control-label">Number of Paragraphs to Generate?</label>
+			<label for="paragraphs" class="col-sm-4 control-label">Number of Paragraphs to Generate [Max: 9]?</label>
 			
 			<div class="col-sm-1">
 		  		<input type="text" 
@@ -35,6 +35,7 @@
 		</div>
 
 		<button type="submit" class="btn btn-default" >Generate!</button>
+
 	</form>
 
 	{{-- Begin output if input was valid --}}

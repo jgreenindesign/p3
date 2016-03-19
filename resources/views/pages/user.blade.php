@@ -40,7 +40,8 @@
 				<p><b>Include...</b></p>
 			  	<div class="checkbox">
 				    <label>
-			      		<input type="checkbox" disabled="disabled" checked> Full Name
+				    	<input type="checkbox" disabled="disabled" checked> Profile Image
+			      		<br><input type="checkbox" disabled="disabled" checked> Full Name
 			      		<br><input type="checkbox" name="uName" id="uName"> User Name
 			      		<br><input type="checkbox" name="uEmail" id="uEmail"> Email
 			      		<br><input type="checkbox" name="uPassword" id="uPassword"> Password
