@@ -14,7 +14,7 @@
 		<div class="container">
 
 			<!-- BEGIN .formcontainer -->
-			<div class="col-sm-12 col-md-6" id="formContainer">
+			<div class="col-sm-8" id="formContainer">
 
 				<form action="/password" method="POST">
 				{{ csrf_field() }}	
@@ -22,7 +22,7 @@
 	    				<!-- BEGIN Required Options -->
 	    				<p class="col-sm-12">
 	    					<label for="passwordSize"># of Words (2 - 9):
-	    						<input type="text" name="passwordSize" id="passwordSize" class="paddedLeft" maxlength="1">
+	    						<input type="text" name="passwordSize" id="passwordSize" class="paddedLeft" maxlength="1" value="2">
 	    					</label>
 	    				</p>
 
@@ -62,11 +62,17 @@
 	    		</form>
 
 				{{-- Content area for the password output --}}
-				<p class="passwordOutput">
-					@if (isset($generatedPassword))
-						<?php echo $generatedPassword; ?>
-					@endif
-				</p> 
+				@if (isset($generatedPassword))
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Your Randomly Generated Password</h3>
+						</div>
+
+						<div class="panel-body">
+							<?php echo $generatedPassword; ?>
+						</div>
+					</div>
+				@endif
 
 				<img src="http://imgs.xkcd.com/comics/password_strength.png" alt="xkcd style passwords" style="width: 100%;">
 			</div>

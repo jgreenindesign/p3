@@ -45,7 +45,13 @@ class PasswordGenController extends Controller {
 		 * a space. Runs the amount of time the user entered for word count
 		*/
 		for ($x = 1; $x <= $passwordSize; $x++) {
+			/* array_rand was not functioning as exprected (was not randome each time)
+			* had to get hacky and use shuffle() before and after each call to array_rand
+			*/
+
+			shuffle($passwordWords);
 		 	$generatedPassword .= $passwordWords[array_rand($passwordWords)]." ";
+		 	shuffle($passwordWords);
 		}
 
 		/* 

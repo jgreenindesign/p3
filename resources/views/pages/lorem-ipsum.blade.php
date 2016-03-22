@@ -47,10 +47,6 @@
 				</div>
 				
 				<div class="panel-body">
-					{{-- @foreach ($paragraphs as $paragraph)
-						<p>{{ $paragraph }}</p>
-					@endforeach --}}
-
 					<?php echo $paragraphs; ?>
 				</div>
 			</div>

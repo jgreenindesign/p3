@@ -27,7 +27,7 @@
 			
 				<label for="numberUsers" class="col-sm-2 control-label">Number of Users?</label>
 				
-				<div class="col-sm-1">
+				<div class="col-sm-2">
 			  		<input type="text"
 			  		class="form-control"
 			  		id="numberUsers"
@@ -43,17 +43,42 @@
 				  	<div class="checkbox">
 
 				    	<p class="col-sm-12">
-	    					<label for="passwordNumber">Include a Number:
-	    						<input type="checkbox" name="passwordNumber" id="passwordNumber" class="paddedLeft">
+	    					<label for="passwordNumber">Profile Image: 
+	    						<input type="checkbox" name="pImage" id="pImage" disabled="disabled" checked class="paddedLeft">
 	    					</label>
+
+	    					<br>
+	    					
+	    					<label for="passwordNumber">Full Name: 
+	    						<input type="checkbox" name="fName" id="fName" disabled="disabled" checked class="paddedLeft">
+	    					</label>
+
+	    					<br>
+	    					
+	    					<label for="passwordNumber">User Name: 
+	    						<input type="checkbox" name="uName" id="uName" class="paddedLeft">
+	    					</label>
+
+	    					<br>
+	    					
+	    					<label for="passwordNumber">Email: 
+	    						<input type="checkbox" name="uEmail" id="uEmail" class="paddedLeft">
+	    					</label>
+
+	    					<br>
+	    					
+	    					<label for="passwordNumber">Password: 
+	    						<input type="checkbox" name="uPassword" id="uPassword" class="paddedLeft">
+	    					</label>
+
+	    					<br>
+	    					
+	    					<label for="passwordNumber">Profile: 
+	    						<input type="checkbox" name="uProfile" id="uProfile" class="paddedLeft">
+	    					</label>
+
 	    				</p>
-				    
-				    	<input type="checkbox" name="pImage" id="pImage" disabled="disabled" checked> Profile Image
-			      		<br><input type="checkbox" name="fName" id="fName" disabled="disabled" checked> Full Name
-			      		<br><input type="checkbox" name="uName" id="uName"> User Name
-			      		<br><input type="checkbox" name="uEmail" id="uEmail"> Email
-			      		<br><input type="checkbox" name="uPassword" id="uPassword"> Password
-			      		<br><input type="checkbox" name="uProfile" id="uProfile"> Profile
+
 			  		</div>
 				</div>
 			</div>
