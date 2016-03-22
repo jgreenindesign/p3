@@ -12,6 +12,7 @@
 
 ## Additional Info to TA
 * On the Random User Generator page, I decided to put the users in a carousel instead of having them run down the page.
+* Included the XKCD Password Generator from P2
 
 ## Additional Resources
 * Twitter Bootstrap Framework (http://getbootstrap.com/)

@@ -10,7 +10,7 @@ use Faker\Factory as Faker;
 class userController extends Controller {
 
     /**
-    * Responds to requests to GET /books
+    * Responds to requests to GET /user
     */
     public function getUser() {
         return view('pages.user');

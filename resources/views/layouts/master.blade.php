@@ -9,8 +9,13 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
+    <!-- Bootstrap framework -->
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel='stylesheet'>
 
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <!-- CSS Stylesheets -->
     <link href='/css/style.css' rel='stylesheet'>
 
     {{-- Yield any page specific CSS files or anything else you might want in the head --}}
@@ -47,6 +52,7 @@
                             </li>
                             <li><a href='/lorem-ipsum'>Lorem Ipsum Generator</a></li>
                             <li><a href='/user'>Random User Generator</a></li>
+                            <li><a href='/password'>Random Password Generator</a></li>
                         </ul>
 
                     </div>

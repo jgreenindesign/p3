@@ -1,3 +1,8 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
 .panel.panel-success {
 	margin-top: 25px;
 }
@@ -37,4 +42,80 @@ footer
     background-image: -o-linear-gradient(left,rgba(0,0,0,.3) 0,rgba(0,0,0,.0001) 100%);
     background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.3)),to(rgba(0,0,0,.0001)));
     background-image: linear-gradient(to right,rgba(0,0,0,.3) 0,rgba(0,0,0,.0001) 100%);
+}
+
+
+/* Styles pulled from p2 
+******************************/
+#formContainer label
+{
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+
+#formContainer
+{
+    background: rgba(242,242,242,1);
+    background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(232,232,232,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,242,242,1)), color-stop(100%, rgba(232,232,232,1)));
+    background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(232,232,232,1) 100%);
+    background: -o-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(232,232,232,1) 100%);
+    background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(232,232,232,1) 100%);
+    background: linear-gradient(to bottom, rgba(242,242,242,1) 0%, rgba(232,232,232,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e8e8e8', GradientType=0 );
+
+    border: 2px solid #bababa;
+    border-radius: 5px;
+    margin: 50px auto 0;
+    float: none;
+}
+
+.paddedLeft
+{
+    margin-left: 20px !important;
+}
+
+.passwordOutput, #formContainer
+{
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.passwordOutput
+{
+    border: 1px solid #696;
+    background-color: #9c9;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 5px;
+    line-height: 26px;
+    color: white;
+    font-family: 'Inconsolata';
+    font-size: 25px;
+    overflow-x: auto;
+}
+
+fieldset p 
+{
+    text-align: left;
+}
+
+#passwordSize
+{
+    width: 30px;
+}
+
+input:focus 
+{
+    border-color: rgba(82,168,236,.8);
+    outline: 0;
+    -webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6);
+    transition: border-color .5s ease;
 }
