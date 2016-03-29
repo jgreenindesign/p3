@@ -9,6 +9,7 @@
 
 ## Video URL
 * https://youtu.be/eTrJ3Ol3ZkE
+* During the video I mentioned including a "profile image" (at 1:54) as one of the checkable options.. I meant to say profile bio. Sorry for the confusion.
 
 ## Additional Info to TA
 ### Lorem Ipsum Generator
@@ -34,4 +35,4 @@
 * Twitter Bootstrap Framework (http://getbootstrap.com/)
 * Fzaninotto/Faker Package for Random Users (https://packagist.org/packages/fzaninotto/faker)
 * Ecrmnn/Lorem Package for Lorem Ipsum Text (https://packagist.org/packages/ecrmnn/lorem)
-* <http://stackoverflow.com/questions/12124492/array-rand-not-randomizing>
+* http://stackoverflow.com/questions/12124492/array-rand-not-randomizing
