@@ -20,9 +20,17 @@
 				{{ csrf_field() }}	
 	    			<fieldset>
 	    				<!-- BEGIN Required Options -->
+						
+						@if ($errors->has('passwordSize'))
+							<div class='col-sm-6'>
+								<p class='bg-danger'>{{ $errors->first('passwordSize') }}</p>
+							</div>
+							<div class="clearfix"></div>
+						@endif
+
 	    				<p class="col-sm-12">
 	    					<label for="passwordSize"># of Words (2 - 9):
-	    						<input type="text" name="passwordSize" id="passwordSize" class="paddedLeft" maxlength="1" value="2">
+	    						<input type="text" name="passwordSize" id="passwordSize" class="paddedLeft  {{ $errors->has('passwordSize') ? 'has-error' :'' }}" maxlength="1" value="2">
 	    					</label>
 	    				</p>
 

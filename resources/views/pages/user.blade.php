@@ -19,17 +19,17 @@
 			<div class="form-group row">
 
 				@if ($errors->has('numberUsers'))
-					<div class='col-sm-4'>
+					<div class='col-sm-6'>
 						<p class='bg-danger'>{{ $errors->first('numberUsers') }}</p>
 					</div>
 					<div class="clearfix"></div>
 				@endif
 			
-				<label for="numberUsers" class="col-sm-2 control-label">Number of Users?</label>
+				<label for="numberUsers" class="col-sm-2 control-label">Number of Users to Generate? <small>[max: 99]</small></label>
 				
 				<div class="col-sm-2">
 			  		<input type="text"
-			  		class="form-control"
+			  		class="form-control {{ $errors->has('numberUsers') ? 'has-error' :'' }}"
 			  		id="numberUsers"
 			  		name="numberUsers"
 			  		value="1"
@@ -92,7 +92,7 @@
 
 		{{-- Begin output if input was valid --}}
 		@if (isset($usersOutput))
-			<div  id="userCarousel" class="carousel slide col-sm-6" data-ride="carousel">
+			<div  id="userCarousel" class="carousel slide col-sm-8" data-ride="carousel">
 				<div class='carousel-inner' role='listbox'>
 					<?php echo $usersOutput; ?>
 				</div>

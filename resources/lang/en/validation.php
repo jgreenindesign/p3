@@ -89,8 +89,14 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'paragraphs' => [
+            'numeric' => 'Number of paragraphs must be a number',
+            'required' => 'Number of paragraphs is a requied field',
+        ],
+
+        'numberUsers' => [
+            'numeric' => 'Number of users must be a number',
+            'required' => 'Number of users is a requied field',
         ],
     ],
 

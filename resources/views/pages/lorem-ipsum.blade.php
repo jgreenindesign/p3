@@ -17,7 +17,7 @@
 			<div class="form-group">
 				
 				@if ($errors->has('paragraphs'))
-					<div class='col-sm-4'>
+					<div class='col-sm-6'>
 						<p class='bg-danger'>{{ $errors->first('paragraphs') }}</p>
 					</div>
 					<div class="clearfix"></div>
